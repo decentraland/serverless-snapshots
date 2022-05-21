@@ -18,7 +18,7 @@ export function createRedirect(network: Network, type: Type) {
       res.status(400).json({ error: 'Invalid address' })
     }
 
-    let peer
+    let peer: string
     switch (network) {
       case 'mainnet': {
         peer = 'https://peer.decentraland.org'
