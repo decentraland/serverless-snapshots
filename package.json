@@ -1,0 +1,30 @@
+{
+  "name": "serverless-profile-images",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/node": "^1.15.3",
+    "chrome-aws-lambda": "^10.1.0",
+    "node-fetch": "^2.6.7",
+    "puppeteer-core": "^10.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  },
+  "engines": {
+    "node": "14"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "semi": false
+  }
+}
