@@ -12,7 +12,7 @@ export function createHandler(getUrl: (address: string) => string, viewport: Vie
     res.setHeader('content-type', 'image/png')
     res.setHeader(
       'cache-control',
-      `public, max-age=2592000, must-revalidate, no-transform` // 30 days of cache
+      `public, max-age=2592000, s-maxage=2592000` // 30 days of cache
     )
     res.status(200).send(screenshot)
   }

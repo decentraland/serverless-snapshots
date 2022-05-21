@@ -12,7 +12,7 @@ const exePath =
     ? 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'
     : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 
-const getOptions = async (isDev) => {
+const getOptions = async (isDev: boolean) => {
   /**
    * If used in a dev environment, i.e. locally, use one of the local
    * executable path
