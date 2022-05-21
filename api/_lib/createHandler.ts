@@ -1,17 +1,5 @@
-import { getScreenshot } from './screenshot'
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-
-type ViewPort = {
-  width: number
-  height: number
-}
-
-type Clip = {
-  x: number
-  y: number
-  width: number
-  height: number
-}
+import { Clip, getScreenshot, ViewPort } from './screenshot'
 
 export function createHandler(getUrl: (address: string) => string, viewport: ViewPort, clip?: Clip) {
   return async (req: VercelRequest, res: VercelResponse) => {

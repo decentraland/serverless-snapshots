@@ -34,7 +34,19 @@ const getOptions = async (isDev) => {
   }
 }
 
-export const getScreenshot = async (url, selector, viewport, clip) => {
+export type ViewPort = {
+  width: number
+  height: number
+}
+
+export type Clip = {
+  x: number
+  y: number
+  width: number
+  height: number
+}
+
+export const getScreenshot = async (url: string, selector: string, viewport: ViewPort, clip?: Clip) => {
   const options = await getOptions(isDev)
   const browser = await (isDev ? puppeteer : chrome.puppeteer).launch(options)
   const page = await browser.newPage()

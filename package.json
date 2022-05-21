@@ -17,6 +17,7 @@
     "puppeteer-core": "^10.1.0"
   },
   "devDependencies": {
+    "@types/node-fetch": "^2.6.1",
     "prettier": "^2.6.2"
   },
   "engines": {
